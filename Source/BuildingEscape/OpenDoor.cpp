@@ -19,6 +19,8 @@ UOpenDoor::UOpenDoor()
 void UOpenDoor::BeginPlay()
 {
 	Super::BeginPlay();
+
+	ActorThatOpens = UGameplayStatics::GetPlayerPawn(GetWorld(), 0);
 }
 
 void UOpenDoor::OpenDoor() {
